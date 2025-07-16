@@ -26,7 +26,7 @@ s = "Revathi"
 #print(int(s)) #Error
 #print(float(s)) #Error
 #print(complex(s)) #Error
-print(list(s))
+print(list(s)) #['R', 'e', 'v', 'a', 't', 'h', 'i']
 print(bool(s)) #True
 print(tuple(s)) #('R', 'e', 'v', 'a', 't', 'h', 'i')
 print(set(s)) #{'i', 'e', 'v', 'a', 'R', 'h', 't'}
