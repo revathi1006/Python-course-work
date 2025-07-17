@@ -62,13 +62,14 @@ print(dict5.items()) #dict_items([('name', 'Durgam Revathi'), ('age', 24), ('cou
 #4.Built-in Function For Dictionaries
 #4.1.len,sorted,max,min
 dict6 = {1:'a',2:'b',3:'c',4:'d'}
-print(len(dict6)) #3
-print(sorted(dict6)) #['Key1', 'key2', 'key3']
-print(max(dict6)) #key3
-print(min(dict6)) #key1
+print(len(dict6)) #4
+print(sorted(dict6)) #[1,2,3,4]
+print(max(dict6)) #4
+print(min(dict6)) #1
 
 #5.Nested Dictionaries
 dict7 = { "Revathi":{'age': 24, 'course': 'CSE', 'city': 'Mancherial', 'year': 4},"Sony":{'age': 19, 'course': 'IT', 'city': 'Jannaram', 'year': 2}}
 print(dict7["Revathi"]["city"]) #Mancherial
 print(dict7["Sony"]["age"]) #19
+
 
