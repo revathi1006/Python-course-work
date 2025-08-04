@@ -9,12 +9,12 @@ while ind<=length:
     ind += 1
     full =- 1
 else:
-    print("palindrome")   '''
+    print("palindrome") '''
 
 
-products={ 
-    "apple":30,
-    "banana":10,
+data={ 
+    "Apple":30,
+    "Banana":10,
     "Orange":20,
     "Milk":50,
     "Bread":25,
@@ -27,28 +27,28 @@ products={
 AddtoCart={}
 while True:
     #Display Menu
-    print('Available product'.center(40,'='))
-    for i,key in enumerate(products):
-        print(f'{(i+1)}. {key.ljust(10," ")}: ${products[key]}')
+    print('Available products'.center(40,'='))
+    for i,key in enumerate(data):
+        print(f'{(i+1)}. {key.ljust(10," ")}: ${data[key]}')
     #Taking a product name
-    product= input("Enter the Product name(Done-Exit):").title()
+    product= input("Enter the Product name(Done-Exit): ").title()
 
     #Exit -Bill generation Logic
     if product == 'Done':
         if AddtoCart:
             totalbill = 0
             for i in AddtoCart:
-                print(f'{i.ljust(10," ")}: {AddtoCart[i]} *{products[i]}')
-                totalbill = totalbill+AddtoCart[i]*products[i]
-            print(f"Total Bill:{totalbill}")
+                print(f'{i.ljust(10," ")} : {AddtoCart[i]} * {data[i]} = ')
+                totalbill = totalbill+AddtoCart[i]*data[i]
+            print(f"Total Bill: {totalbill}")
         else:
             print('Thanks')
         break
+
     #Adding Product to the cart
-    if product in products:
+    if product in data:
         qua=int(input("enter the quantity:"))
         print(f'{product} is add to the cart')
-
         AddtoCart[product]=qua
     else:
         print(f"{product} is not found")

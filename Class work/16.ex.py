@@ -45,5 +45,6 @@ for i in range(4): # Outer loop runs 3 times
 n = int(input("Enter a Number:"))
 for num in range(n,n+1):
     if num % 2 == 0:
-        continue
-    print(num)
+        print("even")
+    else:
+        print("odd")
