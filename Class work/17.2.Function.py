@@ -143,7 +143,7 @@ update(a)
 print("Outside:",a)
 output:
 Inside: {1, 2, 3, 5}
-Outside: {1, 2, 3, 5}'''
+Outside: {1, 2, 3, 5}
 
 def update(a):
     a.update({5:8})
@@ -151,4 +151,6 @@ def update(a):
 a={1:4,2:5,3:6}
 update(a)
 print("Outside:",a)
-
+output:
+Inside: {1: 4, 2: 5, 3: 6, 5: 8}
+Outside: {1: 4, 2: 5, 3: 6, 5: 8}'''
