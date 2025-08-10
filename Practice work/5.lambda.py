@@ -88,3 +88,8 @@ print(mulof3)
 #19.Use lambda to get last digit of a number
 lastdg=lambda i:i%10
 print(lastdg(123))
+#3
+
+#20. Use lambda to check if year is a leap year
+
+

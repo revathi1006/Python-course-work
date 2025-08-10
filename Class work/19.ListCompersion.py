@@ -46,18 +46,22 @@ for i in range(len(l)-1):
 
 ures=((l[i],l[j]) for i in range(len(l)-1) for j in range(i+1,len(l)))
 print(res,ures)
+#[(1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (2, 3), (2, 4), (2, 5), (2, 6), (3, 4), (3, 5), (3, 6), (4, 5), (4, 6), (5, 6)]
 
 s=set()
 for i in range(1,11):
     s.add(i)
 us={i for i in range(1,11)}
 print(s,us)
+#{1, 2, 3, 4, 5, 6, 7, 8, 9, 10} {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
 d={}
 for i in range(1,10):
     d[i]=i*i
 ud={i:i*i for i in range(1,10)}
 print(s,us)
+#{1, 2, 3, 4, 5, 6, 7, 8, 9, 10} {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
 t=tuple(i for i in range(1,10))
 print(t)
+#(1, 2, 3, 4, 5, 6, 7, 8, 9)

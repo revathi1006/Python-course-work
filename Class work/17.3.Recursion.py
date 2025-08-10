@@ -32,7 +32,7 @@ bullets(10)
 7
 8
 9
-10'''
+10
 def bullets(n):
     if n==0:
         return 
@@ -60,5 +60,5 @@ After: 6
 After: 7
 After: 8
 After: 9
-After: 10
+After: 10'''
 
